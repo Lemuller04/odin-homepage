@@ -29,6 +29,7 @@ body {
   display: flex;
   padding: 4rem 8rem;
   flex-wrap: wrap;
+  align-items: center;
   background: linear-gradient(170deg, var(--about-background) 60%, #fff 60.1%);
 }
 
@@ -87,6 +88,7 @@ h2 {
 
 .card {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+  transition: background-color .3s;
 }
 
 h3 {
@@ -132,8 +134,24 @@ footer {
   gap: 30px;
 }
 
-@media (max-width: 1200px) {
-  body {
-    background-color: #000;
+.card:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 1400px) {
+  .projects {
+    grid-template: auto / 1fr 1fr;
+  }
+
+  .about .socials {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-info {
+    font-size: 1rem;
   }
 }
