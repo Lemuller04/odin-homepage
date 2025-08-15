@@ -140,6 +140,10 @@ footer>img {
   overflow: hidden;
 }
 
+.footer-info a {
+  color: var(--light-font);
+}
+
 .card:hover {
   background-color: rgba(0, 0, 0, .1);
 }
