@@ -15,6 +15,7 @@
 @font-face {
   font-family: "Inter";
   src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  font-display: swap;
 }
 
 body {
@@ -173,6 +174,10 @@ footer>img {
 }
 
 @media (max-width: 740px) {
+  body {
+    font-size: 1.125rem;
+  }
+
   .about {
     flex-direction: column;
   }
@@ -207,5 +212,9 @@ footer>img {
   .projects-section,
   footer {
     padding: 1rem 1rem;
+  }
+
+  .footer-info * {
+    text-align: center;
   }
 }

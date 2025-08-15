@@ -139,6 +139,7 @@ const Index = (() => {
 
       if ('image' in projects[key]) {
         const img = document.createElement('img');
+        img.loading = 'lazy';
         img.src = projects[key].image;
         img.alt = `${projects[key].name} screenshot`;
         img.classList.add('print-screen');
@@ -173,6 +174,7 @@ const Index = (() => {
         a.href = projects[key].liveview;
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
+        a.setAttribute('aria-label', 'Open ${projects[key].name} live demo');
 
         links.appendChild(a);
       }
