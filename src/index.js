@@ -1,4 +1,3 @@
-import profilePicture from './images/hornet.png';
 import battleshipImg from './images/battleship.png';
 import todoListImg from './images/todo-list.png';
 import weaterAppImg from './images/weather-app.png';
@@ -174,7 +173,7 @@ const Index = (() => {
         a.href = projects[key].liveview;
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
-        a.setAttribute('aria-label', 'Open ${projects[key].name} live demo');
+        a.setAttribute('aria-label', `Open ${projects[key].name} live demo`);
 
         links.appendChild(a);
       }
