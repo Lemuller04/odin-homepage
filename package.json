@@ -1,7 +1,7 @@
 {
-  "name": "npm-template-odin",
+  "name": "odin-homepage",
   "version": "1.0.0",
-  "description": "Template for The Odin Project projects",
+  "description": "Homepage project",
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --verbose",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lemuller04/npm-template-odin.git"
+    "url": "git+https://github.com/Lemuller04/odin-homepage.git"
   },
   "keywords": [],
   "author": "leonardomullerdelima@pm.me",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lemuller04/npm-template-odin/issues"
+    "url": "https://github.com/Lemuller04/odin-homepage/issues"
   },
-  "homepage": "https://github.com/Lemuller04/npm-template-odin#readme",
+  "homepage": "https://github.com/Lemuller04/odin-homepage#readme",
   "devDependencies": {
     "@eslint/css": "^0.9.0",
     "@eslint/js": "^9.30.1",
