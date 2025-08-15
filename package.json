@@ -1,0 +1,40 @@
+{
+  "name": "npm-template-odin",
+  "version": "1.0.0",
+  "description": "Template for The Odin Project projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --verbose",
+    "build": "webpack --config webpack.prod.mjs",
+    "dev": "webpack serve --config webpack.dev.mjs",
+    "lint": "eslint src/",
+    "prettier": "prettier src --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemuller04/npm-template-odin.git"
+  },
+  "keywords": [],
+  "author": "leonardomullerdelima@pm.me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lemuller04/npm-template-odin/issues"
+  },
+  "homepage": "https://github.com/Lemuller04/npm-template-odin#readme",
+  "devDependencies": {
+    "@eslint/css": "^0.9.0",
+    "@eslint/js": "^9.30.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.30.1",
+    "globals": "^16.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^30.0.5",
+    "prettier": "3.6.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1"
+  },
+  "type": "module"
+}
