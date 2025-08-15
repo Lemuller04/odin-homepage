@@ -134,6 +134,12 @@ footer {
   gap: 30px;
 }
 
+footer>img {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
 .card:hover {
   background-color: rgba(0, 0, 0, .1);
 }
@@ -153,5 +159,49 @@ footer {
 
   .about-info {
     font-size: 1rem;
+  }
+
+  .about,
+  .projects-section,
+  footer {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    width: 100%;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  .about .socials {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+  }
+
+  .projects {
+    grid-template: auto / 1fr;
+  }
+
+  footer>img {
+    display: none;
+  }
+
+  h1 {
+    position: relative;
+  }
+
+  .about,
+  .projects-section,
+  footer {
+    padding: 1rem 1rem;
   }
 }
