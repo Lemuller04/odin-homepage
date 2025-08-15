@@ -1,6 +1,6 @@
 # Responsive Homepage
 
-A fully responsive gomepage project build with **HTML**, **CSS**, and **JavaScript**, following [The Odin Projects](https://theodinproject.com) curriculum. This page adapts to desktop, tablet, and mobile devices, and dynamically loads projects from JavaScript.
+A fully responsive homepage project build with **HTML**, **CSS**, and **JavaScript**, following [The Odin Projects](https://theodinproject.com) curriculum. This page adapts to desktop, tablet, and mobile devices, and dynamically loads projects from JavaScript.
 
 ## Features
 
@@ -37,4 +37,4 @@ A fully responsive gomepage project build with **HTML**, **CSS**, and **JavaScri
 
 ## Live Demo
 
-[View it on GitHub Pages](https://lemuller.github.io/odin-homepage)
+[View it on GitHub Pages](https://lemuller04.github.io/odin-homepage)
