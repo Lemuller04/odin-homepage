@@ -24,7 +24,7 @@ export default {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|webp|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|webp|jpeg|gif|ico)$/i,
         type: 'asset/resource',
       },
       {
