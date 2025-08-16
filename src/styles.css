@@ -147,7 +147,7 @@ footer {
   gap: 30px;
 }
 
-footer > img {
+footer>img {
   width: auto;
   height: 100%;
   overflow: hidden;
@@ -212,7 +212,7 @@ footer > img {
     grid-template: auto / 1fr;
   }
 
-  footer > img {
+  footer>picture {
     display: none;
   }
 
@@ -223,7 +223,7 @@ footer > img {
   .about,
   .projects-section,
   footer {
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
   }
 
   .footer-info * {

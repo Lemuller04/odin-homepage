@@ -1,15 +1,15 @@
-import battleshipImg from './images/battleship.png';
-import todoListImg from './images/todo-list.png';
-import weaterAppImg from './images/weather-app.png';
-import restaurantPageImg from './images/restaurant-page.png';
-import ticTacToeImg from './images/tic-tac-toe.png';
-import libraryImg from './images/library.png';
-import adminDashboardImg from './images/admin-dashboard.png';
-import signUpFormImg from './images/sign-up-form.png';
-import rockPaperScissorsImg from './images/rock-paper-scissors.png';
-import calculatorImg from './images/calculator.png';
-import etchASketchImg from './images/etch-a-sketch.png';
-import landingPageImg from './images/landing-page.png';
+import battleshipImg from './images/battleship.webp';
+import todoListImg from './images/todo-list.webp';
+import weaterAppImg from './images/weather-app.webp';
+import restaurantPageImg from './images/restaurant-page.webp';
+import ticTacToeImg from './images/tic-tac-toe.webp';
+import libraryImg from './images/library.webp';
+import adminDashboardImg from './images/admin-dashboard.webp';
+import signUpFormImg from './images/sign-up-form.webp';
+import rockPaperScissorsImg from './images/rock-paper-scissors.webp';
+import calculatorImg from './images/calculator.webp';
+import etchASketchImg from './images/etch-a-sketch.webp';
+import landingPageImg from './images/landing-page.webp';
 
 import openInNew from './icons/open-in-new.svg';
 
@@ -137,12 +137,7 @@ const Index = (() => {
       card.classList.add('card');
 
       if ('image' in projects[key]) {
-        const img = document.createElement('img');
-        img.loading = 'lazy';
-        img.src = projects[key].image;
-        img.alt = `${projects[key].name} screenshot`;
-        img.classList.add('print-screen');
-        card.appendChild(img);
+        loadImage(card, key);
       }
 
       const name = document.createElement('h3');
@@ -150,32 +145,11 @@ const Index = (() => {
       const links = document.createElement('span');
 
       if ('repository' in projects[key]) {
-        const a = document.createElement('a');
-        const icon = document.createElement('img');
-        icon.src =
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
-        icon.width = '30';
-        icon.height = '30';
-        a.appendChild(icon);
-        a.href = projects[key].repository;
-        a.setAttribute('aria-label', `View ${projects[key].name} on GitHub`);
-
-        links.appendChild(a);
+        loadRepoLink(links, key);
       }
 
       if ('liveview' in projects[key]) {
-        const a = document.createElement('a');
-        const icon = document.createElement('img');
-        icon.src = openInNew;
-        icon.width = '30';
-        icon.height = '30';
-        a.appendChild(icon);
-        a.href = projects[key].liveview;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.setAttribute('aria-label', `Open ${projects[key].name} live demo`);
-
-        links.appendChild(a);
+        loadLiveDemoLInk(links, key);
       }
 
       name.appendChild(links);
@@ -187,6 +161,44 @@ const Index = (() => {
       card.appendChild(desc);
 
       container.appendChild(card);
+    }
+
+    function loadImage(card, key) {
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.src = projects[key].image;
+      img.alt = `${projects[key].name} screenshot`;
+      img.classList.add('print-screen');
+      card.appendChild(img);
+    }
+
+    function loadRepoLink(links, key) {
+      const a = document.createElement('a');
+      const icon = document.createElement('img');
+      icon.src =
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
+      icon.width = '30';
+      icon.height = '30';
+      a.appendChild(icon);
+      a.href = projects[key].repository;
+      a.setAttribute('aria-label', `View ${projects[key].name} on GitHub`);
+
+      links.appendChild(a);
+    }
+
+    function loadLiveDemoLInk(links, key) {
+      const a = document.createElement('a');
+      const icon = document.createElement('img');
+      icon.src = openInNew;
+      icon.width = '30';
+      icon.height = '30';
+      a.appendChild(icon);
+      a.href = projects[key].liveview;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.setAttribute('aria-label', `Open ${projects[key].name} live demo`);
+
+      links.appendChild(a);
     }
   }
 })();
