@@ -2,6 +2,7 @@
   --about-background: #7d4c4b;
   --dark-font: #262626;
   --light-font: #fcffff;
+  --warning-background: #ffebb5;
 }
 
 *,
@@ -159,6 +160,14 @@ footer>img {
 
 .card:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.warning {
+  background-color: var(--warning-background);
+  padding: 20px 40px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 20px 0;
 }
 
 @media (max-width: 1400px) {
