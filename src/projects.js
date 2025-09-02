@@ -104,7 +104,7 @@ const projects = {
     repository: 'https://github.com/Lemuller04/odin-landing-page',
     liveview: 'https://lemuller04.github.io/odin-landing-page/',
   },
-  // Projects with now live view
+  // Projects with no live view
   knightsTravails: {
     name: 'Knights Travails',
     description: 'A algorithm to find the shortest path on a 8x8 board.',
