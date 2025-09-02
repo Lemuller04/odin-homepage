@@ -1,3 +1,4 @@
+import cvApplicationImage from './images/cv-application.webp';
 import battleshipImg from './images/battleship.webp';
 import todoListImg from './images/todo-list.webp';
 import weaterAppImg from './images/weather-app.webp';
@@ -12,6 +13,13 @@ import etchASketchImg from './images/etch-a-sketch.webp';
 import landingPageImg from './images/landing-page.webp';
 
 const projects = {
+  cvApplication: {
+    name: 'CV Application',
+    description: 'A simple CV/résumé generator built with React.',
+    image: cvApplicationImage,
+    repository: 'https://github.com/Lemuller04/odin-cv-application',
+    liveview: 'https://cheery-bavarois-f65673.netlify.app/',
+  },
   battleship: {
     name: 'Battleship Game',
     description: 'An implementation of the classic battleship game using JavaScript.',
