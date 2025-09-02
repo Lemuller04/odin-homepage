@@ -102,7 +102,12 @@ h2 {
 
 .card {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, scale .2s;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  scale: 101%;
 }
 
 h3 {
@@ -156,10 +161,6 @@ footer>img {
 
 .footer-info a {
   color: var(--light-font);
-}
-
-.card:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .warning {
