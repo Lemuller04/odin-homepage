@@ -1,3 +1,4 @@
+import memoryGameImg from './images/memory-game.webp';
 import cvApplicationImage from './images/cv-application.webp';
 import battleshipImg from './images/battleship.webp';
 import todoListImg from './images/todo-list.webp';
@@ -13,6 +14,13 @@ import etchASketchImg from './images/etch-a-sketch.webp';
 import landingPageImg from './images/landing-page.webp';
 
 const projects = {
+  memoryGame: {
+    name: 'Memory Game',
+    description: 'A memory card game made with React and Tailwind.',
+    image: memoryGameImg,
+    repository: 'https://github.com/Lemuller04/odin-memory-card',
+    liveview: 'https://gitgud-memory-game.netlify.app/',
+  },
   cvApplication: {
     name: 'CV Application',
     description: 'A simple CV/résumé generator built with React.',
