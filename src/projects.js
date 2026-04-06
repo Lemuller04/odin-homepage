@@ -12,8 +12,16 @@ import rockPaperScissorsImg from './images/rock-paper-scissors.webp';
 import calculatorImg from './images/calculator.webp';
 import etchASketchImg from './images/etch-a-sketch.webp';
 import landingPageImg from './images/landing-page.webp';
+import miniMessageBoardImg from './images/mini-message-board.webp';
 
 const projects = {
+  miniMessageBoard: {
+    name: 'Mini Message Board',
+    description: 'A message board to practice express js and postgresql',
+    image: miniMessageBoardImg,
+    repository: 'https://github.com/Lemuller04/odin-mini-message-board',
+    liveview: 'https://odin-mini-message-board-dby3w9z8r-leonardos-projects-b6cb00a8.vercel.app/',
+  },
   memoryGame: {
     name: 'Memory Game',
     description: 'A memory card game made with React and Tailwind.',
