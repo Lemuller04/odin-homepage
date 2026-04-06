@@ -13,6 +13,7 @@ import calculatorImg from './images/calculator.webp';
 import etchASketchImg from './images/etch-a-sketch.webp';
 import landingPageImg from './images/landing-page.webp';
 import miniMessageBoardImg from './images/mini-message-board.webp';
+import shoppingCartImg from './images/shopping-cart.webp';
 
 const projects = {
   miniMessageBoard: {
@@ -21,6 +22,13 @@ const projects = {
     image: miniMessageBoardImg,
     repository: 'https://github.com/Lemuller04/odin-mini-message-board',
     liveview: 'https://odin-mini-message-board-dby3w9z8r-leonardos-projects-b6cb00a8.vercel.app/',
+  },
+  shoppingCart: {
+    name: 'Shopping Cart',
+    description: 'A shopping cart project to practice fetching data in React',
+    image: shoppingCartImg,
+    repository: 'https://github.com/Lemuller04/odin-shopping-cart',
+    liveview: 'https://lemu-odin-shopping-cart.netlify.app/',
   },
   memoryGame: {
     name: 'Memory Game',
